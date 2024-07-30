@@ -1,3 +1,5 @@
+@font-face {font-family: Matrix; src: url('matrix_code_nfi/matrix\ code\ nfi.ttf')}
+
 :root {
     --cube-width: 300px;
     --translateZ: 150px;
@@ -80,20 +82,24 @@
 }
 
 #top {
-    background-color: white;
+    background-color: black;
     transform: rotate3d(1,0,0,90deg) translate3d(0,0,var(--translateZ));
 }
 
 #bottom {
-    background-color: white;
+    background-color: yellow;
     transform: rotate3d(1,0,0,-90deg) translate3d(0,0,var(--translateZ));
-} 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
 
 @keyframes spin {
     0% {
         transform: rotate3d(1,1,0, 0deg);
     } 100% {
-        transform: rotate3d(-1,1,0, 360deg);
+        transform: rotate3d(1,1,0, 360deg);
     } 
 }
 
@@ -112,6 +118,11 @@
         width: 200px;
     }
 
+    #animation-box {
+        height: 200px;
+        width: 200px;
+    }
+
     .fa-linkedin {
         transform: scale(10);
     }
@@ -122,5 +133,9 @@
 
     .fa-envelope {
         transform: scale(5);
+    }
+
+    #bottom {
+        font-size: 20px;
     }
 }
