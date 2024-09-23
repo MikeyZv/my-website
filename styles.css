@@ -69,31 +69,44 @@
     align-items: center;
 }
 
-/* email */
-.fa-envelope {
-    color: white;
-    transform: scale(7);
+/* quaternion visualizer */
+#quaternion-picture {
+    height: 300px;
+    width: 300px;
 }
+
 #right {
-    background-color: red;
+    background-color: yellow;
     transform: rotate3d(0,1,0,90deg) translate3d(0,0,var(--translateZ));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* matrix */
 #top {
     background-color: black;
     transform: rotate3d(1,0,0,90deg) translate3d(0,0,var(--translateZ));
 }
 
+/* quaternion visualizer */
+#quaternion-picture {
+    height: 300px;
+    width: 300px;
+}
+
+/* email */
+.fa-envelope {
+    color: white;
+    transform: scale(7);
+}
+
 #bottom {
-    background-color: yellow;
+    background-color: red;
     transform: rotate3d(1,0,0,-90deg) translate3d(0,0,var(--translateZ));
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
 }
 
 @keyframes spin {
@@ -124,6 +137,11 @@
         width: 200px;
     }
 
+    #quaternion-picture {
+        height: 200px;
+        width: 200px;
+    }
+
     .fa-linkedin {
         transform: scale(10);
     }
@@ -134,9 +152,5 @@
 
     .fa-envelope {
         transform: scale(5);
-    }
-
-    #bottom {
-        font-size: 20px;
     }
 }
