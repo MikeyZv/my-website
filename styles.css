@@ -26,13 +26,19 @@
     height: var(--cube-width);
     width: var(--cube-width);
     position: absolute;
+    border: 1px solid black;
     
+}
+
+.img-link {
+    height: 100%;
+    width: 100%;
 }
 
 /* project */
 #project-picture {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
 }
 
 #front {
@@ -71,8 +77,8 @@
 
 /* quaternion visualizer */
 #quaternion-picture {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
 }
 
 #right {
@@ -91,8 +97,8 @@
 
 /* quaternion visualizer */
 #quaternion-picture {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
 }
 
 /* email */
@@ -127,20 +133,11 @@
         height: 800px;
     }
 
-    #project-picture {
-        height: 200px;
-        width: 200px;
-    }
-
     #animation-box {
         height: 200px;
         width: 200px;
     }
 
-    #quaternion-picture {
-        height: 200px;
-        width: 200px;
-    }
 
     .fa-linkedin {
         transform: scale(10);
