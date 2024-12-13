@@ -11,35 +11,42 @@
             <div class="cube-container">
                 <div class="cube">
                     <div class="cube-face" id="front">
-                        <a class="img-link" href="/2048">
+                        <canvas id="animation-box-front"></canvas>
+                        <!-- <a class="img-link" href="/2048">
                             <img id="project-picture" src="2048.png" alt="picture of my game 2048">
-                        </a>
+                        </a> -->
                     </div>
                     <div class="cube-face" id="back">
-                        <a href="https://www.linkedin.com/in/miguelzv/">
+                        <canvas id="animation-box-back"></canvas>
+                        <!-- <a class="logo" href="https://www.linkedin.com/in/miguelzv/">
                             <i class="fa-brands fa-linkedin"></i>
-                        </a>
+                        </a> -->
                     </div>
                     <div class="cube-face" id="left">
-                        <a href="https://github.com/MikeyZv">
+                        <canvas id="animation-box-left"></canvas>
+                        <!-- <a class="logo" href="https://github.com/MikeyZv">
                             <i class="fa-brands fa-github fa-2xl"></i>
-                        </a>
+                        </a> -->
                     </div>
                     <div class="cube-face" id="right">
-                        <a class="img-link" href="/quaternion">
+                        <canvas id="animation-box-right"></canvas>
+                        <!-- <a class="img-link" href="/quaternion">
                             <img id="quaternion-picture" src="quaternion.jpg" alt="picture of my quaternion project">
-                        </a>
+                        </a> -->
                     </div>
                     <div class="cube-face" id="top">
-                        <canvas id="animation-box"></canvas>
+                        <canvas id="animation-box-top"></canvas>
                     </div>
                     <div class="cube-face" id="bottom">
-                        <a href="mailto:zmikey16@gmail.com">
+                        <canvas id="animation-box-bottom"></canvas>
+                        <!-- <a class="logo" href="mailto:zmikey16@gmail.com">
                             <i class="fa-regular fa-envelope fa-2xl"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
+            <script src="rotate.js"></script>
             <script src="matrix.js"></script>
+            <script src="textbox.js"></script>
     </body>
 </html>

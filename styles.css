@@ -1,4 +1,13 @@
 @font-face {font-family: Matrix; src: url('matrix_code_nfi/matrix\ code\ nfi.ttf')}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+}
 
 :root {
     --cube-width: 300px;
@@ -19,108 +28,51 @@
     transform-style: preserve-3d;
     height: var(--cube-width);
     width: var(--cube-width);
-    animation: spin 5s linear infinite;
+    /* animation: spin 5s linear infinite; */
 }
 
 .cube-face {
     height: var(--cube-width);
     width: var(--cube-width);
     position: absolute;
-    border: 1px solid black;
-    
-}
-
-.img-link {
-    height: 100%;
-    width: 100%;
-}
-
-/* project */
-#project-picture {
-    height: 100%;
-    width: 100%;
+    /* border: 1px solid black; */
 }
 
 #front {
-    background-color: green;
     transform: translate3d(0,0,var(--translateZ));
     display: flex;
 }
 
-/* linkedin */
-.fa-linkedin {
-    color: white;
-    transform: scale(15);
-}
-
 #back {
     transform: rotate3d(0,1,0,180deg) translate3d(0,0,var(--translateZ));
-    background-color: #0a66c2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* github */
-.fa-github {
-    color: white;
-    transform: scale(7);
-}
-
 #left {
-    background-color: black;
     transform: rotate3d(0,1,0,-90deg) translate3d(0,0,var(--translateZ));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* quaternion visualizer */
-#quaternion-picture {
-    height: 100%;
-    width: 100%;
-}
-
 #right {
-    background-color: yellow;
     transform: rotate3d(0,1,0,90deg) translate3d(0,0,var(--translateZ));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* matrix */
 #top {
-    background-color: black;
     transform: rotate3d(1,0,0,90deg) translate3d(0,0,var(--translateZ));
 }
 
-/* quaternion visualizer */
-#quaternion-picture {
-    height: 100%;
-    width: 100%;
-}
-
-/* email */
-.fa-envelope {
-    color: white;
-    transform: scale(7);
-}
-
 #bottom {
-    background-color: red;
     transform: rotate3d(1,0,0,-90deg) translate3d(0,0,var(--translateZ));
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate3d(1,1,0, 0deg);
-    } 100% {
-        transform: rotate3d(1,1,0, 360deg);
-    } 
 }
 
 @media (max-width: 600px) {
@@ -129,25 +81,33 @@
         --translateZ: 100px;
     }
 
-    .cube-container {
-        height: 800px;
+    #animation-box-front {
+        height: var(--cube-width);
+        width: var(--cube-width);
     }
 
-    #animation-box {
-        height: 200px;
-        width: 200px;
+    #animation-box-back {
+        height: var(--cube-width);
+        width: var(--cube-width);
     }
 
-
-    .fa-linkedin {
-        transform: scale(10);
+    #animation-box-left {
+        height: var(--cube-width);
+        width: var(--cube-width);
+    }
+    
+    #animation-box-right {
+        height: var(--cube-width);
+        width: var(--cube-width);
     }
 
-    .fa-github {
-        transform: scale(4);
+    #animation-box-top {
+        height: var(--cube-width);
+        width: var(--cube-width);
     }
 
-    .fa-envelope {
-        transform: scale(5);
+    #animation-box-bottom {
+        height: var(--cube-width);
+        width: var(--cube-width);
     }
 }
