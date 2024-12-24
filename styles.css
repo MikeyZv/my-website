@@ -1,113 +1,72 @@
-@font-face {font-family: Matrix; src: url('matrix_code_nfi/matrix\ code\ nfi.ttf')}
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
-    background-color: black;
+    height: 1130px;
     width: 100%;
+    background-color: #121212;
 }
 
-:root {
-    --cube-width: 300px;
-    --translateZ: 150px;
-}
-
-.cube-container {
+#title {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100px;
     width: 100%;
+    background-color: #121212;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;  
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: 1000px;
-    perspective: 1000px;
-    perspective-origin: center;
+    width: 100%;
+    background-color: #121212;
 }
 
-.cube {
-    transform-style: preserve-3d;
-    height: var(--cube-width);
-    width: var(--cube-width);
-    /* animation: spin 5s linear infinite; */
-}
-
-.cube-face {
-    height: var(--cube-width);
-    width: var(--cube-width);
-    position: absolute;
-    /* border: 1px solid black; */
-}
-
-#front {
-    transform: translate3d(0,0,var(--translateZ));
-    display: flex;
-}
-
-#back {
-    transform: rotate3d(0,1,0,180deg) translate3d(0,0,var(--translateZ));
+.project-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #121212;
 }
 
-#left {
-    transform: rotate3d(0,1,0,-90deg) translate3d(0,0,var(--translateZ));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img {
+    width: 200px;
 }
 
-#right {
-    transform: rotate3d(0,1,0,90deg) translate3d(0,0,var(--translateZ));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+footer {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-#top {
-    transform: rotate3d(1,0,0,90deg) translate3d(0,0,var(--translateZ));
+a {
+    text-decoration: none;
 }
 
-#bottom {
-    transform: rotate3d(1,0,0,-90deg) translate3d(0,0,var(--translateZ));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fa-linkedin {
+    position: relative;
+    right: 2%;
+    color: white;
+    transform: scale(0.75);
 }
 
-@media (max-width: 600px) {
-    :root {
-        --cube-width: 200px;
-        --translateZ: 100px;
-    }
+.fa-envelope {
+    color: white;
+    transform: scale(0.75);
+}
 
-    #animation-box-front {
-        height: var(--cube-width);
-        width: var(--cube-width);
-    }
-
-    #animation-box-back {
-        height: var(--cube-width);
-        width: var(--cube-width);
-    }
-
-    #animation-box-left {
-        height: var(--cube-width);
-        width: var(--cube-width);
-    }
-    
-    #animation-box-right {
-        height: var(--cube-width);
-        width: var(--cube-width);
-    }
-
-    #animation-box-top {
-        height: var(--cube-width);
-        width: var(--cube-width);
-    }
-
-    #animation-box-bottom {
-        height: var(--cube-width);
-        width: var(--cube-width);
-    }
+.fa-github{
+    position: relative;
+    left: 2%;
+    color: white;
+    transform: scale(0.75);
 }

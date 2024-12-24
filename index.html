@@ -5,48 +5,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="styles.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="#">
         <script src="https://kit.fontawesome.com/6d56778525.js" crossorigin="anonymous"></script>
     </head>
     <body>
-            <div class="cube-container">
-                <div class="cube">
-                    <div class="cube-face" id="front">
-                        <canvas id="animation-box-front"></canvas>
-                        <!-- <a class="img-link" href="/2048">
-                            <img id="project-picture" src="2048.png" alt="picture of my game 2048">
-                        </a> -->
-                    </div>
-                    <div class="cube-face" id="back">
-                        <canvas id="animation-box-back"></canvas>
-                        <!-- <a class="logo" href="https://www.linkedin.com/in/miguelzv/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a> -->
-                    </div>
-                    <div class="cube-face" id="left">
-                        <canvas id="animation-box-left"></canvas>
-                        <!-- <a class="logo" href="https://github.com/MikeyZv">
-                            <i class="fa-brands fa-github fa-2xl"></i>
-                        </a> -->
-                    </div>
-                    <div class="cube-face" id="right">
-                        <canvas id="animation-box-right"></canvas>
-                        <!-- <a class="img-link" href="/quaternion">
-                            <img id="quaternion-picture" src="quaternion.jpg" alt="picture of my quaternion project">
-                        </a> -->
-                    </div>
-                    <div class="cube-face" id="top">
-                        <canvas id="animation-box-top"></canvas>
-                    </div>
-                    <div class="cube-face" id="bottom">
-                        <canvas id="animation-box-bottom"></canvas>
-                        <!-- <a class="logo" href="mailto:zmikey16@gmail.com">
-                            <i class="fa-regular fa-envelope fa-2xl"></i>
-                        </a> -->
-                    </div>
-                </div>
+        <div id="title">My Projects</div>
+        <div id="main-container">
+            <div class="project-container">
+                <a href="/rubiks">
+                    <img src="rubiks.jpg">
+                </a>
             </div>
-            <script src="rotate.js"></script>
-            <script src="matrix.js"></script>
-            <script src="textbox.js"></script>
+            <div class="project-container">
+                <a href="/2048">
+                    <img src="2048.png">
+                </a>
+            </div>
+            <div class="project-container">
+                <a href="/quaternion">
+                    <img src="quaternion.png">
+                </a>
+            </div>
+            <div class="project-container">
+                <a href="matrix">
+                    <img src="matrix.png">
+                </a>
+            </div>
+        </div>
     </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/miguelzv/">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </a>
+        <a href="mailto:zmikey16@gmail.com">
+            <i class="fa-regular fa-envelope fa-2xl"></i>
+        </a>
+        <a href="https://github.com/MikeyZv">
+            <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+    </footer>
 </html>
